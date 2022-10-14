@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * Main - Entry point
  *
@@ -24,4 +25,3 @@ int main (void)
 
 	return (0);
 }
-
