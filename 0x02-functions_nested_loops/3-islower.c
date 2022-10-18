@@ -4,17 +4,16 @@
  *  @c: An input character
  *  Return: 1 if c is lowercase, 0 if  otherwise
  */
-int _islower(int c)
+int _islower(int alpha)
 {
-	char i;
-	int lower;
-
-	for (i = 'a'; i <= 'z'; i++)
+	if (alpha >= 'a' && alpha  <= 'z')
 	{
-		if (i == c)
-			lower = 1;
-		else
-			lower = 0;
+		return (1);
 	}
-	return (lower);
+	else
+	{
+		return (0);
+	}
+
+	return (0);
 }
