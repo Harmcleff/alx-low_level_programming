@@ -5,21 +5,28 @@
  */
 void times_table(void)
 {
-	int row, column, product;
+	int num, mult, prod;
 
-	for (row = 0; row <= 9; row++)
+	for (num = 0; num <= 9; ++num)
 	{
-		_putchar(0);
-		for (column = 1; column <= 9; column++)
+		_putchar(48);
+		for (mult = 1; mult <= 9; ++mult)
 		{
 			_putchar(',');
 			_putchar(' ');
-			product = row * column;
-			if (product <= 9)
+
+			prod = num * mult;
+
+			/**
+			 * put space if product is a single number
+			 * place the first digit if its two numbers
+			 */
+			if (prod <= 9)
 				_putchar(' ');
 			else
-				_putchar((product / 10) + '0');
-			_putchar((product % 10) + '0');
+				_putchar((prod / 10) + 48); /*get the first digit*/
+			
+			_putchar((prod % 10) + 48); /*get the second digit*/
 		}
 		_putchar('\n');
 	}
