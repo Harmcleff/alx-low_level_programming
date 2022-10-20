@@ -1,23 +1,20 @@
 #include "main.h"
 /**
- * print_last_digit - prints the last digit of the given vakue
- * @value: the given value
- * Return: returns 0 if succcessful 1 if otherwise
+ * print_line - a function that draws a straight line in the terminal.
+ * @n: is the number of times the character _ should be printed
+ * Return: Always 0
  */
-int print_last_digit(int value)
+void print_line(int n)
 {
-	int remain = value % 10;
+	int a;
 
-	if (remain < 0)
+	if (n > 0)
 	{
-		remain = -(remain);
-		_putchar(remain + '0');
-		return (remain);
+		for (a = 0; a < n; a++)
+		{
+			_putchar('_');
+		}
+
 	}
-	else
-	{
-		_putchar(remain + '0');
-		return (remain);
-	}
-	return (0);
+	_putchar('\n');
 }
