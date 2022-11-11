@@ -30,7 +30,7 @@
             len++;
 
     result = malloc(sizeof(char) * (len + 1));
-
+  
     if (result == NULL)
     {
         return NULL;
