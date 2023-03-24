@@ -3,6 +3,6 @@
 
 git add .
 echo "Enter commit message"
-read commitmessage
-git commit -m "$commitmessage"
+read commitmes
+git commit -m "$commitmes"
 git push
